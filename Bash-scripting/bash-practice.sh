@@ -40,3 +40,6 @@ else
 	touch config /file.txt
 
 fi
+
+#day 11 
+i have not done anything today 
