@@ -42,4 +42,9 @@ else
 fi
 
 #day 11 
-i have not done anything today 
+i have not done anything today
+
+
+# day 12 
+today i learned about operators in bash could not practice was tired due to football match 
+
