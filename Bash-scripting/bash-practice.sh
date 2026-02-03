@@ -47,7 +47,7 @@ i have not done anything today
 
 # day 12 
 today i learned about operators in bash could not practice was tired due to football match 
-'
+
 
 # day 13 
 
@@ -69,4 +69,11 @@ today i learned about operators in bash could not practice was tired due to foot
  learned about functions mostly did nothing will learn function tomm feeling low now days
 
  # day 15 
- was tired due to college so did nothing 
+ was tired due to college so did nothing
+'
+# day 16
+
+read -p "enter your name: " name
+
+echo "hello $name  "
+
