@@ -70,10 +70,133 @@ today i learned about operators in bash could not practice was tired due to foot
 
  # day 15 
  was tired due to college so did nothing
-'
+
 # day 16
 
 read -p "enter your name: " name
 
 echo "hello $name  "
+
+
+for i in 1 2 3 4 5
+
+do
+    if [ "$i" -eq 3 ]
+    then
+        break
+    fi
+    echo $i
+done
+
+
+password=9969191978 
+
+while true 
+do 
+	read -p "enter your password: " p 
+
+	if [ "$p" == "$password" ]
+
+	then
+		echo "access granted"
+		break
+	else 
+		echo "wrong password try again"
+
+	fi
+done
+
+usage=90
+        
+echo " your usage "$usage" "
+ 
+if [ "$usage" -ge 90 ]
+
+then 
+	echo "your usage is 90%, warning"
+
+else 
+    echo " your disk is okay!"	
+fi
+
+
+attempt=1
+
+while [ "$attempt" -le 3 ]
+do
+	echo " connecting attempt:$attempt"
+	
+	if [ "$attempt" -eq 3 ]
+
+	then 
+		echo "server is successfully connected "
+		break
+
+	else 
+		echo "failed to connect"
+	fi
+
+	attempt=$((attempt+1))
+done
+
+attempt=1
+
+while [ "$attempt" -le 3 ]
+do
+        echo " connecting attempt:$attempt"
+
+        if [ "$attempt" -eq 3 ]
+
+        then
+		sleep 1
+                echo "server is successfully connected "
+                break
+
+        else
+                echo "failed to connect"
+		sleep 1
+        fi
+
+        attempt=$((attempt+1))
+done
+
+
+numbers=1
+
+while [ "$numbers" -le  10 ]
+do 
+	echo "$numbers"
+
+	if [ "$numbers" -eq 10 ]
+	then
+
+		echo"$numbers"
+
+	else
+		echo"counting failed"
+	fi
+
+	numbers=$((numbers+1))
+
+done
+'
+numbers=1
+
+while [ "$numbers" -le 10 ]
+
+do
+	if [ "$numbers" == 8 ]
+	then
+	        numbers=$((numbers+1))
+		continue
+
+	elif [  $((numbers % 2)) -eq 0 ]
+	then 
+		echo "$numbers"
+
+	fi
+
+	numbers=$((numbers+1))
+
+done
 
